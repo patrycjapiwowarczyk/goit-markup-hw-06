@@ -960,5 +960,109 @@ PORTFOLIO-MAIN-END
   border-radius: 4px;
 }
 
+.form-heading {
+  width: 448px;
+  height: 23px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--just-black);  
+  margin-top: 40px;
+  margin-bottom: 12px;
+  white-space: nowrap;
+}
+
+.data-form-area {
+display: flex;
+flex-direction: column;
+ margin-left: 40px;
+ margin-right: 40px;
+}
+
+.form-input{
+  position: relative;
+  display: flex;
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
 
 
+.data-form svg {
+  display: flex;
+  position: absolute;
+  align-self: center;
+  margin-top: ;
+}
+
+.username-svg {
+  display: flex;
+  top: 34px;
+  left: 15px;
+  fill: var(--just-black);
+}
+
+.phone-number-svg {
+  display: flex;
+  top: 34px;
+  left: 14.27px;
+  fill: var(--just-black);
+}
+
+.email-svg {
+  display: flex;
+  top: 34px;
+  left: 13.5px;
+  fill: var(--just-black);
+}
+
+.form-label {
+  position: relative;
+  display: flex;
+  width: 448px;
+  height: 58px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+
+.form-text {
+  display: flex;
+  margin-bottom: 4px;
+  letter-spacing: 0.01em;
+  color:var(--light-gray);
+}
+
+.label-comment {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+}
+
+.comment-input {
+  width: 448px;
+  height: 120px;
+  padding-top: 12px;
+  padding-left: 16px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+  resize: none;
+  outline: none;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform;
+}
+
+.label-comment::placeholder {
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+text-indent: 0px;
+}

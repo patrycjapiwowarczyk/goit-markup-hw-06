@@ -375,6 +375,38 @@
             <use href="images/icons.svg/sprite.svg#icon-close-btn"></use>
           </svg>
         </button>
+        <div class="data-form-area">
+        <a class="form-heading">Zostaw swoje dane w formularzu poniżej</a>
+        <form name="data-form" autocomplete="on" novalidate class="data-form">
+          <div class="form-label">
+          <label for="username"><a class="form-text">Imie</a>
+            <input class="form-input" type="text" name="username" id="username">
+            <svg class="username-svg"><use width="12" height="12" href="images/icons.svg/sprite.svg#icon-form-name"></use></svg>
+          </label>
+        </div>
+        <div class="form-label">
+          <label for="phone-number"><a class="form-text">Telefon</a>
+            <input class="form-input" type="tel" name="phone-number" id="phone-number">
+            <svg class="phone-number-svg"><use width="13" height="13" href="images/icons.svg/sprite.svg#icon-form-phone"></use></svg>
+          </label>
+        </div>
+        <div class="form-label">
+          <label for="email"><a class="form-text">Email</a>
+            <input class="form-input" type="email" name="email" id="email">
+            <svg class="email-svg"><use width="15" height="12" href="images/icons.svg/sprite.svg#icon-form-mail"></use></svg>
+          </label>
+        </div>
+        <div class="label-comment">
+          <label for="comment"><a class="form-text">Komentarz</a>
+            <input class="comment-input" type="text" name="comment" id="comment" placeholder="Wprowadź tekst">
+            </label>
+          </div>
+        <label>
+          <input type="radio">Oświadczam, iż akcpetuję Regulamin i Politykę Prywatności.
+        </label>
+        <button type="submit">Wyślij</button>
+      </form>
+    </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>
