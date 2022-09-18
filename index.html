@@ -380,19 +380,19 @@
         <form name="data-form" autocomplete="on" novalidate class="data-form">
           <div class="form-label">
           <label for="username"><a class="form-text">Imie</a>
-            <input class="form-input" type="text" name="username" id="username">
+            <input class="form-input" type="text" name="username" id="username" required>
             <svg class="username-svg"><use width="12" height="12" href="images/icons.svg/sprite.svg#icon-form-name"></use></svg>
           </label>
         </div>
         <div class="form-label">
           <label for="phone-number"><a class="form-text">Telefon</a>
-            <input class="form-input" type="tel" name="phone-number" id="phone-number">
+            <input class="form-input" type="tel" name="phone-number" id="phone-number" required>
             <svg class="phone-number-svg"><use width="13" height="13" href="images/icons.svg/sprite.svg#icon-form-phone"></use></svg>
           </label>
         </div>
         <div class="form-label">
           <label for="email"><a class="form-text">Email</a>
-            <input class="form-input" type="email" name="email" id="email">
+            <input class="form-input" type="email" name="email" id="email" required>
             <svg class="email-svg"><use width="15" height="12" href="images/icons.svg/sprite.svg#icon-form-mail"></use></svg>
           </label>
         </div>
@@ -400,11 +400,33 @@
           <label for="comment"><a class="form-text">Komentarz</a>
             <input class="comment-input" type="text" name="comment" id="comment" placeholder="Wprowadź tekst">
             </label>
-          </div>
-        <label>
-          <input type="radio">Oświadczam, iż akcpetuję Regulamin i Politykę Prywatności.
-        </label>
-        <button type="submit">Wyślij</button>
+            <div>
+              <label class="checkbox-label" for="user-statement">
+                <input
+                  class="checkbox-area hidden"
+                  type="checkbox"
+                  name="acceptation"
+                  id="user-statement"/>
+                <span class="statement-text">
+                  Oświadczam, iż akceptuję
+                  <a
+                    class="statement-link"
+                    href="./index.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Regulamin</a>i
+                  <a
+                    class="statement-link"
+                    href="./index.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Politykę Prywatności</a>.
+                </span>
+              </label>
+            </div>
+        <div class="data-button-area">
+        <button class="data-button" type="submit"><span class="data-button-text">Wyślij</span></button>
+      </div>
       </form>
     </div>
       </div>
