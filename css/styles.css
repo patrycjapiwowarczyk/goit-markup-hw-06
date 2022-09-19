@@ -929,11 +929,11 @@ PORTFOLIO-MAIN-END
   pointer-events: visible;
 }
 
-/* .is-hidden {
+.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-} */
+}
 
 .backdrop {
   position: fixed;
@@ -1091,7 +1091,6 @@ PORTFOLIO-MAIN-END
   padding: 0;
   cursor: pointer;
   left: 14px;
-  margin-top: 20px;
 }
 
 .checkbox-area {
@@ -1105,6 +1104,7 @@ PORTFOLIO-MAIN-END
   background-color: var(--just-white);
   border: 2px solid var(--just-black);
   border-radius: 1.68px;
+  margin-top: 20px;
 }
 
 .hidden {
@@ -1126,7 +1126,7 @@ PORTFOLIO-MAIN-END
   font-size: 14px;
   line-height: 1.71;
   color: var(--light-gray);
-  margin: 0;
+  margin-top: 20px;
 }
 
 .statement-link {
