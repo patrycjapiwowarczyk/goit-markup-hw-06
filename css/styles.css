@@ -984,7 +984,13 @@ PORTFOLIO-MAIN-END
   height: 581px;
 }
 
+.data-form svg {
+  position: absolute;
+  border: none;
+}
+
 .form-input{
+  border: none;
   position: relative;
   display: flex;
   width: 448px;
@@ -993,29 +999,40 @@ PORTFOLIO-MAIN-END
   border-radius: 4px;
 }
 
+.data-form svg:focus,
+.data-form svg:hover {
+  border: none;
+}
 
-.data-form svg {
-  position: absolute;
+.input-hover:focus-within .hovering,
+.input-hover:hover .hovering {
+  fill: var(--hover-blue);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform;
+}
+
+.hovering:focus-within,
+.hovering:hover {
+  outline: none;
+  border: 1px solid var(--hover-blue);
+  border-radius: 4px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform;
 }
 
 .username-svg {
-  position: absolute;
   top: 34px;
   left: 15px;
   fill: var(--just-black);
-  width:40px;
-  height: 62px;
 }
 
 .phone-number-svg {
-  position: absolute;
   top: 34px;
   left: 14.27px;
   fill: var(--just-black);
 }
 
 .email-svg {
-  position: absolute;
   top: 34px;
   left: 13.5px;
   fill: var(--just-black);
@@ -1066,7 +1083,6 @@ PORTFOLIO-MAIN-END
   color: rgba(117, 117, 117, 0.5);
 }
 
-
 .checkbox-label {
   position: absolute;
   display: flex;
@@ -1077,7 +1093,6 @@ PORTFOLIO-MAIN-END
   left: 14px;
   margin-top: 20px;
 }
-
 
 .checkbox-area {
   position: relative;
@@ -1137,6 +1152,7 @@ PORTFOLIO-MAIN-END
   background: var(--hover-blue);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border-color: var(--hover-blue);
   width: 200px;
   height: 50px;
 }
