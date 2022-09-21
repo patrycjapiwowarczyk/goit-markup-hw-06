@@ -1147,7 +1147,8 @@ textarea {
 
 .statement-link:hover,
 .statement-link:focus {
-  color: #217bc4;
+  text-shadow: 0px 0px 8px #777777;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox-box {
