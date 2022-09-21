@@ -1144,6 +1144,12 @@ textarea {
   text-decoration: none;
   color: var(--hover-blue);
 }
+
+.statement-link:hover,
+.statement-link:focus {
+  color: #217bc4;
+}
+
 .checkbox-box {
   position: absolute;
   top: 30px;
