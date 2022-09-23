@@ -45,7 +45,7 @@ body {
 
 /* HEADER */
 
-.nav-text {
+.navigation_text {
   text-decoration: none;
   font-weight: 500;
   line-height: 100%;
@@ -54,23 +54,23 @@ body {
   margin-right: 46px;
 }
 
-.nav-text:hover {
+.navigation_text:hover {
   color: var(--hover-blue);
   text-decoration: underline;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-text:focus {
+.navigation_text:focus {
   color: var(--hover-blue);
   text-decoration: underline;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.current-page-nav {
+.navigation_current-page {
   color: var(--hover-blue);
 }
 
-.contact-text {
+.contact-info_text{
   text-decoration: none;
   font-weight: 500;
   line-height: 100%;
@@ -81,16 +81,16 @@ body {
   align-items: center;
 }
 
-.contact-icons {
+.contact-info_icons {
   margin-right: 10px;
 }
 
-.contact-text {  
+.contact-info_text {  
   fill: var(--light-gray)
 }
 
-.contact-text:hover,
-.contact-text:focus {
+.contact-info_text:hover,
+.contact-info_text:focus {
   color: var(--hover-blue);
   text-decoration: underline;
   fill: var(--hover-blue);
@@ -106,7 +106,7 @@ body {
   letter-spacing: 3%;
 }
 
-.header-logo {
+.header_logo {
   width: 145px;
   height: 31px;
   text-decoration: none;
@@ -114,15 +114,15 @@ body {
   margin-bottom: 25px;
 }
 
-.logo1 {
+.logo--blue {
   color: var(--hover-blue);
 }
 
-.logo2 {
+.logo--gray {
   color: var(--just-black);
 }
 
-.logo3 {
+.logo--white {
   color: var(--just-white);
 }
 
@@ -133,7 +133,7 @@ body {
   border: 1px solid #eeeeee;
 }
 
-.header-text {
+.header_text {
   display: flex; 
   flex-direction: row;
   align-items: center;
@@ -150,19 +150,21 @@ body {
   display: flex; 
 }
 
-.nav:first-child {
+.navigation:first-child {
   margin-left: 93px;
 } 
 
- .phone{
+.contact-info:last-child a {
   display: flex;
-  margin-left: 50px}
+  margin-left: 50px
+}
 
-  .current-page-nav{
+
+  .navigation_current-page{
     position: relative;
   }
 
-.current-page-nav::after {
+.navigation_current-page::after {
   position: absolute;
   display: block;
   content: "";
@@ -184,7 +186,7 @@ body {
 
 /* FOOTER */
 
-.footer-logo {
+.footer_logo {
   width: 145px;
   height: 31px;
   text-decoration: none;
@@ -192,33 +194,27 @@ body {
   display: flex;
 }
 
-.address {
+.contact-box {
   font-style: normal;
   line-height: 171%;
   letter-spacing: 0.03em;
 }
 
-.footer-contact {
+.contact-box_mail,
+.contact-box_phone {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
 
-.street {
+.contact-box_address {
   color: var(--just-white);
 }
 
-.footer-contact:hover {
+.contact-box_mail:hover,
+.contact-box_phone:hover,
+.contact-box_mail:focus,
+.contact-box_phone:focus {
   text-decoration: underline;
-  color: var(--hover-blue);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-contact:focus {
-  color: var(--hover-blue);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-contact:active {
   color: var(--hover-blue);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -234,36 +230,28 @@ body {
   flex-direction: column;
 }
 
-.street {
-  margin-top: 20px;
-}
-
-.footer-contact {
+.contact-box_mail,
+.contact-box_phone {
   display: flex;
-}
-
-.footer-mail,
-.footer-phone {
   margin-top: 9px;
 }
 
-.footer-phone {
+.contact-box_phone {
   margin-bottom: 60px;
 }
 
-.footer-column{
+.footer-column {
   display: flex;
   flex-direction: row
 }
 
-.footer-social{width: 206px;
+.social-box {width: 206px;
   height: 80px;
   margin-top: 72px;
   margin-left: 70px;
-
 }
 
-.footer-text-heading{font-style: normal;
+.text-heading {font-style: normal;
   font-weight: 700;
   line-height: 100%;
   letter-spacing: 0.03em;
@@ -271,7 +259,7 @@ body {
   color: var(--just-white); 
 }
 
-.social-icon-box-footer {
+.social-icons {
   display:flex;
   width: 206px;
   height: 44px;
@@ -279,7 +267,7 @@ body {
   gap: 10px;
 }
 
-.social-icon-footer {
+.social-icon {
   height: 44px;
   width: 44px;
   border-radius: 0px;
@@ -288,8 +276,8 @@ body {
   fill: var(--just-white);
 }
 
-.social-icon-footer:hover,
-.social-icon-footer:focus {
+.social-icon:hover,
+.social-icon:focus {
   height: 44px;
   width: 44px;
   border-radius: 50px;
@@ -299,28 +287,18 @@ body {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.signup-form-area{
+.signup-form-box{
   display: flex;
   flex-direction: column;
-}
-
-.footer-text-heading-signup {
-  font-style: normal;
-  font-weight: 700;
-  line-height: 100%;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--just-white); 
+  margin-left: 78px;
   margin-top: 72px;
-  margin-left: 78px;
 }
 
-.signup-form{
-  margin-left: 78px;
+.signup-form {
   margin-top: 20px;
 }
 
-label .email {
+label .signup-form_email {
   padding-left: 16px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -331,7 +309,15 @@ label .email {
   background-color: transparent;
 }
 
-.email::placeholder{
+label .signup-form_email:hover,
+label .signup-form_email:focus {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.signup-form_email::placeholder {
   font-size: 16px;
   line-height: 125%;
   display: flex;
@@ -340,7 +326,7 @@ label .email {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.button-signup{
+.signup-form_button {
   width: 200px;
   height: 50px;
   background: var(--hover-blue);
@@ -350,32 +336,32 @@ label .email {
   border-color: var(--hover-blue);
 }
 
-.button-signup:hover,
-.button-signup:focus {
+.signup-form_buttontext {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 188%;
+  letter-spacing: 0.06em;
+  width: 82px;
+  height: 30px;
+  margin-left: 42px;
+  white-space: nowrap;
+  color: var(--just-white);
+}
+
+.signup-form_button:hover,
+.signup-form_button:focus {
   box-shadow: inset 0px 0px 30px -10px rgba(38, 108, 121, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.signup-btn-container {
+.signup-button-container {
   width:100%;
   height: 100%;
   display: flex;
   align-items: center;
 }
 
-.signup-btn-text{
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 188%;
-  letter-spacing: 0.06em;
-  color: var(--just-white);
-  width: 82px;
-  height: 30px;
-  margin-left: 42px;
-  white-space: nowrap;
-}
-
-.signup-btn-container svg {
+.signup-button-container svg {
   margin-left: 24px;
 }
 
@@ -497,7 +483,7 @@ justify-content: center;
 }
 
 
-.text-heading {
+.section-heading {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -930,6 +916,11 @@ PORTFOLIO-MAIN-END
   pointer-events: visible;
 }
 
+.close-btn:hover,
+.close-btn:focus {
+  background-color: #c3c7c94e;
+}
+
 .is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -1190,3 +1181,4 @@ textarea {
   box-shadow: inset 0px 0px 30px -10px rgba(38, 108, 121, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
