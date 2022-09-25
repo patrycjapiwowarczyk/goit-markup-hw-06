@@ -183,6 +183,10 @@ body {
 
 /* FOOTER */
 
+.footer {
+  padding-top: 60px;
+}
+
 .footer_logo {
   width: 145px;
   height: 31px;
@@ -222,11 +226,8 @@ body {
   background: var(--just-gray);
 }
 
-.footer {
-  display: flex;
-  flex-direction: column;
-}
 
+.contact-box_address,
 .contact-box_mail,
 .contact-box_phone {
   display: flex;
@@ -237,14 +238,14 @@ body {
   margin-bottom: 60px;
 }
 
-.footer-column {
+.footer {
   display: flex;
   flex-direction: row
 }
 
 .social-box {width: 206px;
   height: 80px;
-  margin-top: 72px;
+  margin-top: 12px;
   margin-left: 70px;
 }
 
@@ -288,7 +289,7 @@ body {
   display: flex;
   flex-direction: column;
   margin-left: 78px;
-  margin-top: 72px;
+  margin-top: 12px;
 }
 
 .signup-form {
@@ -571,7 +572,13 @@ justify-content: center;
 
 /* GRAY-SECTION */
 
-.gray-section-box {
+.background-gray-section {
+  display: flex;
+  justify-content: center;
+  background: var(--background-light-gray);
+}
+
+.card-list_card {
   width: 270px;
   height: 428px;
   background: var(--just-white);
@@ -579,13 +586,7 @@ justify-content: center;
   border-radius: 0px 0px 4px 4px;
 }
 
-.background-gray-section {
-  display: flex;
-  justify-content: center;
-  background: var(--background-light-gray);
-}
-
-.photo-description {
+.card_photo-description {
   font-weight: 500;
   font-style: normal;
   font-size: 16px;
@@ -596,7 +597,7 @@ justify-content: center;
   margin-top: 30px;
 }
 
-.additional-photo-description {
+.card_additional-photo-description {
   font-size: 16px;
   line-height: 100%;
   text-align: center;
@@ -605,7 +606,7 @@ justify-content: center;
   margin-top: 10px;
 }
 
-.list3 {
+.card-list {
   width: 1170px;
   flex-wrap: wrap;
   gap: 30px;
@@ -646,25 +647,15 @@ justify-content: center;
 
 /* GRAY-SECTION-END */
 
-/* CLIENTS-SECTION */
+/* LOGOS-SECTION */
 
-.background-clients-section {
+.background-logos-section {
   display: flex;
   justify-content: center;
   background: var(--just-white);
 }
 
-.logo-box{
-  display: flex;
-  justify-content: center;
-  place-items: center;
-  width: 170px;
-  height: 92px;
-  border: 1px solid #AFB1B8;
-  border-radius: 4px;
-}
-
-.clients-box {
+.logos-box {
   list-style: none;
   display: flex;
   align-items: center;
@@ -673,8 +664,15 @@ justify-content: center;
   margin-top: 50px;
 }
 
-.logo-box{
-fill: var(--social-icon-gray);
+.logo-box {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  fill: var(--social-icon-gray);
 }
 
 .logo-box:hover,
@@ -685,11 +683,17 @@ fill: var(--social-icon-gray);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-/* CLIENTS-SECTION-END */
+/* LOGOS-SECTION-END */
 
 /* PORTFOLIO-MAIN */
 
-.button-box {
+.background-portfolio-main {
+  display: flex;
+  justify-content: center;
+  background-color: var(--just-white);
+}
+
+.nav-buttons-box {
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -699,7 +703,7 @@ fill: var(--social-icon-gray);
   justify-content: center;
 }
 
-.buttons {
+.nav-buttons {
   background: var(--background-light-gray);
   border-radius: 4px;
   border-color: var(--background-light-gray);
@@ -710,66 +714,59 @@ fill: var(--social-icon-gray);
   font-style: normal;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   cursor: pointer;
+  display: flex;
   justify-content: center;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-bottom: 6px;
+  padding-top: 6px;
 }
 
-.buttons1 {
-  width: 121px;
-  height: 38px;
+.current-button {
   background-color: var(--hover-blue);
   color: var(--just-white);
   border-color: var(--hover-blue);
 }
 
-.buttons2 {
-  width: 93px;
-  height: 38px;
-}
-
-.buttons3 {
-  width: 114px;
-  height: 38px;
-}
-
-.buttons4 {
-  width: 91px;
-  height: 38px;
-}
-
-.buttons5 {
-  width: 121px;
-  height: 38px;
-}
-
-.buttons:hover {
+.nav-buttons:hover {
   border-color: var(--hover-blue);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.buttons:focus {
+.nav-buttons:focus {
   border-color: var(--hover-blue);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.images-section {
+.projects-list {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 56px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.project-section {
   box-sizing: border-box;
   width: 370px;
   background: var(--just-white);
   border: 1px solid #eeeeee;
 }
 
-.images-section:hover,
-.images-section:focus {
+.project-section:hover,
+.project-section:focus {
   background: box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-.image-description {
+.project-box_description {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -780,7 +777,7 @@ fill: var(--social-icon-gray);
   margin-left: 24px
 }
 
-.additional-image-description {
+.project-box_additional-description {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -792,30 +789,12 @@ fill: var(--social-icon-gray);
   margin-left: 24px;
 }
 
-.background-portfolio-main {
-  display: flex;
-  justify-content: center;
-  background-color: var(--just-white);
-}
-
-.image-list {
-  width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 56px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
-
-.card-animation-box {
+.project-box {
   overflow: hidden;
   position: relative;
 }
 
-.card-animation {
+.project-box_animation {
   background: rgba(33, 150, 243, 0.9);;
   position: absolute;
   left: inherit;
@@ -823,14 +802,11 @@ fill: var(--social-icon-gray);
   width: 370px;
   height: 294px;
   transform: translateY(100%);
-}
-
-.card-animation{
   display: flex;
   align-items: center;
 }
 
-.card-animation p {
+.project-box_animation p {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -842,28 +818,25 @@ fill: var(--social-icon-gray);
   margin-left: 24px;
 }
 
-.images-section:focus .card-animation,
-.images-section:hover .card-animation{
+.project-section:focus .project-box_animation,
+.project-section:hover .project-box_animation {
 transform: translateY(-100%);
 transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.images-section:focus,
-.images-section:hover
+.project-section:focus,
+.project-section:hover
 {border: 1px solid #EEEEEE;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 PORTFOLIO-MAIN-END
 
-.button-box{
-  position: absolute;
+.button-box {
+  position: relative;
 }
 
 .close-btn {
-  display: flex;
-  justify-content: center;
-  align-content: center;
   position: absolute;
   width: 30px;
   height: 30px;
@@ -874,6 +847,7 @@ PORTFOLIO-MAIN-END
   border-radius: 50%;
   cursor: pointer;
   pointer-events: visible;
+
 }
 
 .close-btn:hover,
@@ -927,7 +901,7 @@ PORTFOLIO-MAIN-END
   white-space: nowrap;
 }
 
-.data-form-area {
+.data-form-box {
   display: flex;
   flex-direction: column;
   margin-left: 40px;
@@ -941,7 +915,7 @@ PORTFOLIO-MAIN-END
   border: none;
 }
 
-.form-input{
+.data-form_input {
   border: none;
   position: relative;
   display: flex;
@@ -957,15 +931,15 @@ PORTFOLIO-MAIN-END
   border: none;
 }
 
-.input-hover:focus-within .hovering,
-.input-hover:hover .hovering {
+.data-form_input-box:focus-within .input-hovering,
+.data-form_input-box:hover .input-hovering {
   fill: var(--hover-blue);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: transform;
 }
 
-.hovering:focus-within,
-.hovering:hover {
+.input-hovering:focus-within,
+.input-hovering:hover {
   outline: none;
   border: 1px solid var(--hover-blue);
   border-radius: 4px;
@@ -991,7 +965,7 @@ PORTFOLIO-MAIN-END
   fill: var(--just-black);
 }
 
-.form-label {
+.data-form_label {
   position: relative;
   display: flex;
   width: 448px;
@@ -1000,18 +974,18 @@ PORTFOLIO-MAIN-END
   align-items: center;
 }
 
-.form-text {
+.data-form_text {
   display: flex;
   margin-bottom: 4px;
   letter-spacing: 0.01em;
   color:var(--light-gray);
 }
 
-.label-comment {
+.data-form_label-comment {
   position: relative;
 }
 
- .comment-input {
+ .data-form_comment-input {
   height: 120px;
   width: 100%;
   padding: 12px 16px;
@@ -1035,7 +1009,7 @@ textarea {
   letter-spacing: 0.01em;
 }
 
-.comment-input::placeholder {
+.data-form_comment-input::placeholder {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -1045,7 +1019,7 @@ textarea {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.checkbox-label {
+.data-form_checkbox-label {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -1055,7 +1029,7 @@ textarea {
   left: 14px;
 }
 
-.checkbox-area {
+.data-form_checkbox {
   position: relative;
   display: block;
   width: 16px;
@@ -1074,7 +1048,8 @@ textarea {
   -webkit-appearance: none;
   appearance: none;
 }
-.checkbox-area:checked {
+
+.data-form_checkbox:checked {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height='15' viewBox='0 0 16 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='16' height='15' rx='2' fill='%232196F3'/%3E%3Cpath d='M3.95703 7.75166L3.88825 7.68604L3.81923 7.75141L2.93123 8.59258L2.85486 8.66492L2.93097 8.73753L6.42671 12.0724L6.49574 12.1382L6.56476 12.0724L14.069 4.91352L14.1449 4.84116L14.069 4.76881L13.1873 3.92764L13.1183 3.86183L13.0493 3.92761L6.49577 10.1735L3.95703 7.75166Z' fill='white' stroke='white' stroke-width='0.2'/%3E%3C/svg%3E");
   background-position: center;
   background-repeat: no-repeat;
@@ -1100,11 +1075,6 @@ textarea {
 .statement-link:focus {
   text-shadow: 0px 0px 8px #777777;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.checkbox-box {
-  position: absolute;
-  top: 30px;
 }
 
 .data-button-area {
